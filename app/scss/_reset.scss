@@ -1,6 +1,8 @@
 a {
   text-decoration: none;
-  color: #fff;
+  color: $dark;
+  outline: transparent;
+  cursor: pointer;
 }
 
 ul li {

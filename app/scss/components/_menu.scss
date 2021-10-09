@@ -1,0 +1,32 @@
+.menu {
+  margin-left: auto;
+  margin-right: 60px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child){
+      margin-right: 45px;
+    }
+  }
+  &__link {
+    transition: box-shadow 0.5s ease, color 0.5s ease, text-shadow 0.5s ease;
+    &:focus {
+      box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+      border-radius: 5px;
+    }
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+      box-shadow: none;
+      color: $dark;
+    }
+  }
+
+  &__link--active {
+    color: $orange; 
+  }
+  
+}
