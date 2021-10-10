@@ -54,8 +54,8 @@
   <main class="main">
     <section class="hero">
       <div class="container">
-        <div class="hero__inner">
-          <div class="hero__holder">
+      
+          <div class="hero__inner">
             <h1 class="hero__title">
               Доставка<span> за 15 минут</span>
             </h1>
@@ -65,11 +65,8 @@
             </p>
             <button class="hero__btn" type="button">Заказать</button>
             <a class="hero__link">Подробнее</a>
-          </div>
-          <div class="hero__box">
-            <img class="hero__img" src="images/courier.png" alt="изображение курьера">
-          </div>
         </div>
+      
       </div>
     </section>
 
@@ -80,7 +77,7 @@
         </h2>
         <ul class="popular__filters">
           <li class="popular__filter popular__filter--burgers">
-            <button class="popular__btn" type="button">
+            <button class="popular__btn popular__btn--active" type="button">
               Бургеры
             </button>
           </li>
@@ -105,7 +102,7 @@
             </button>
           </li>
         </ul>
-        <div class="category">
+        <article class="category">
           <div class="category__card">
             <img class="category__img" src="images/menu/сheeseburger.png" alt="чизбургер">
             <h3 class="category__name">
@@ -206,7 +203,7 @@
             </span>
             <button class="category__btn" type="button">В корзину</button>
           </div>
-        </div>
+        </article>
         <a class="popular__link" href="#">Показать еще</a>
       </div>
     </section>
@@ -222,96 +219,111 @@
             <label class="form__info">
               <input class="form__field" type="email" placeholder="Ваш email">
             </label>
-            <button class="form__btn" type="submit">Подписаться</button>
+            <button class="form__btn" type="submit">Подписаться
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.31798 14.3001C9.05865 14.3001 8.81927 14.1616 8.70234 13.9406L6.66076 10.0822C6.54864 9.87034 6.5679 9.61684 6.71028 9.42119L10.0058 5.20009L5.53816 8.31359C5.33112 8.44879 5.06285 8.46569 4.83861 8.36039L0.756133 6.43184C0.511253 6.31549 0.361987 6.07304 0.37712 5.81434C0.391565 5.55564 0.568346 5.32944 0.825607 5.24039L13.895 0.690388C14.1461 0.603938 14.4288 0.660488 14.6193 0.840538C14.8092 1.01929 14.8711 1.28709 14.7782 1.52499L9.96319 13.875C9.86827 14.1181 9.62958 14.2851 9.35581 14.2988C9.34343 14.2994 9.33036 14.3001 9.31798 14.3001Z" fill="white"/>
+              </svg>
+            </button>
           </form>
         </div>
         <ul class="footer__info">
-          <li class="footer__info-item">
-            <a class="footer__info-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Как это работает
             </a>
           </li>
-          <li class="footer__info-item">
-            <a class="footer__info-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Продукты
             </a>
           </li>
-          <li class="footer__info-item">
-            <a class="footer__info-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Блюда
             </a>
           </li>
-          <li class="footer__info-item">
-            <a class="footer__info-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Меню
             </a>
           </li>
         </ul>
         <ul class="footer__about">
-          <li class="footer__about-item">
-            <a class="footer__about-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               О нас
             </a>
           </li>
-          <li class="footer__about-item">
-            <a class="footer__about-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Новости
             </a>
           </li>
-          <li class="footer__about-item">
-            <a class="footer__about-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Партнеры
             </a>
           </li>
-          <li class="footer__about-item">
-            <a class="footer__about-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               ЧаВо
             </a>
           </li>
         </ul>
         <ul class="footer__other">
-          <li class="footer__other-item">
-            <a class="footer__other-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Скачать приложение
             </a>
           </li>
-          <li class="footer__other-item">
-            <a class="footer__other-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Блог
             </a>
           </li>
-          <li class="footer__other-item">
-            <a class="footer__other-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Что нового?
             </a>
           </li>
-          <li class="footer__other-item">
-            <a class="footer__other-link" href="#">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
               Карта сайта
             </a>
           </li>
         </ul>
-        <address class="footer__contacts">
-          <a class="footer__link" href="#">ул. Смирнова 2/3</a>
-          <a class="footer__link" href="tel:79068057043">79068057043</a>
-          <a class="footer__link" href="mailto:support@sfood.com">support@sfood.com</a>
-            <ul class="footer__social-list">
-              <li class="footer__social__item">
-                <a class="footer__network" href="#" style="background-image: url(images/icons/facebook.svg);"></a>
-              </li>
-              <li class="footer__social__item">
-                <a class="footer__network" href="#" style="background-image: url(images/icons/twitter.svg);"></a>
-              </li>
-              <li class="footer__social__item">
-                <a class="footer__network" href="#" style="background-image: url(images/icons/instagram.svg);">network        </li>
-            </ul>
+        <address class="contacts">
+          <a class="contacts__link contacts__link--location" href="#">ул. Смирнова 2/3</a>
+          <a class="contacts__link contacts__link--phone" href="tel:79068057043">79068057043</a>
+          <a class="contacts__link contacts__link--mail" href="mailto:support@sfood.com">support@sfood.com</a>
+          <div class="contacts__social">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__item-link" href="#" style="background-image: url(images/icons/facebook.svg);"></a>
+                  <span class="sr-only">фейсбук</span>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__item-link" href="#" style="background-image: url(images/icons/twitter.svg);"></a>
+                  <span class="sr-only">твитер</span>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__item-link" href="#" style="background-image: url(images/icons/instagram.svg);"></a>
+                  <span class="sr-only">инстаграм</span>
+                </li>
+              </ul>
+          </div>
+          
         </address>
       </div>
-
+      <div class="footer__copyright">
+        <p class="footer__text">
+          © 2021 Simple Food
+        </p>
+      </div>
     </div>
   </footer>
 
-
+  <script src="/path/to/mixitup.min.js"></script> 
   <script src="js/main.min.js"></script>
 </body>
 

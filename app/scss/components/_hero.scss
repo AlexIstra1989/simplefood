@@ -1,15 +1,15 @@
 .hero {
-  min-height: calc(100vh - 160px);
   margin-bottom: 120px;
+  background-image: url("../../images/courier.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position-x: 85%;
   &__inner {
-    display: flex;
-    align-items: center;
-  }
-  &__holder {  
     margin-right: auto;
     max-width: 450px;
     width: 100%;
-  }
+    padding: 155px 0;
+  } 
   &__title {
     font-weight: 500;
     font-size: 66px;
@@ -31,9 +31,28 @@
     color: #fff;
     font-size: 18px;
     margin-right: 29px;
+    transition: color 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    &:focus,
+    &:hover,
+    &:active {
+      border-radius: 5px;
+      color: $orange;
+    }
+    &:focus {
+      background-color: rgba(255, 122, 80, 0.1);
+      box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 5px 12px rgba(255, 104, 56, 0.2), 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+    }
+    &:active {
+      background-color: rgba(255, 122, 80, 0.1);
+      box-shadow: none;
+    }
   }
   &__link {
-    transition: box-shadow 0.5s, color 0.5s ease, text-shadow 0.5s ease;
+    transition: box-shadow 0.5s, color 0.5s ease, color 0.5s ease, text-shadow 0.5s ease;
     &:focus {
       background-color: rgba(255, 255, 255, 0.01);
       box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
@@ -46,9 +65,5 @@
     &:active {
       text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
     }
-  }
-  &__box {
-    max-width: 460px;
-    width: 100%;
   }
 }
