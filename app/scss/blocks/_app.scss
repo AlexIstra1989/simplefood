@@ -1,0 +1,26 @@
+.app {
+ padding-bottom: 120px;
+ &__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ &__box {
+  max-width: 538px;
+ }
+ &__title {
+  text-align: left;
+  margin-bottom: 45px;
+ }
+ &__text {
+  margin-bottom: 30px;
+ }
+ &__links {
+  display: flex;
+ }
+ &__link {
+  &:not(:last-child) {
+   margin-right: 30px;
+  }
+ }
+}

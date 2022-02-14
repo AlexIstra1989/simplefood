@@ -1,0 +1,46 @@
+.slider {
+ &__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 990px;
+  margin: 0 auto;
+ }
+ &__author-image {
+  border-radius: 50%;
+ }
+ &__box {
+  max-width: 570px;
+ }
+ &__blockquote {
+  font-style: italic;
+  margin-bottom: 30px;
+  position: relative;
+  &::before,
+  &::after {
+   @include pseudo;
+   width: 24px;
+   height: 20px;
+  }
+  &::before {
+   @include background (url("../images/quotes-left.jpg"));
+   top: 0;
+   left: -50px;
+  }
+  &::after {
+   @include background (url("../images/quotes-right.jpg"));
+   bottom: 0;
+   right: 0;
+  }
+ }
+ &__author-name {
+  display: block;
+  font-weight: 500;
+  color: $orange;
+  margin-bottom: 15px;
+ }
+ &__span {
+  @include text(14px, 1.3, $darkBlue-900);
+  font-weight: 600;
+ }
+}
