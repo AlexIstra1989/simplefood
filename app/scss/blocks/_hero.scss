@@ -67,3 +67,46 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+ .hero {
+  background-size: 45%;
+ }
+}
+
+@media (max-width: 992px) {
+ .hero {
+  margin-bottom: 60px;
+  &__inner {
+   max-width: 395px;
+  }
+  &__title {
+   font-size: 55px;
+  }
+ }
+}
+
+@media (max-width: 768px) {
+ .hero {
+  background-image: none;
+  margin-bottom: 0;
+  &__inner {
+   margin: 0 auto;
+   padding: 100px 0;
+  }
+  &__title {
+   max-width: 270px;
+   font-size: 40px;
+  }
+  &__text {
+   font-size: 18px;
+  }
+  &__btn {
+   padding: 8px 20px;
+   font-size: 14px;
+  }
+  &__link {
+   font-size: 14px;
+  }
+ }
+}

@@ -36,3 +36,11 @@
     right: -9px;
   }
 }
+
+
+@media (max-width: 768px) {
+ .user-nav{
+  display: none;
+ }
+ 
+}

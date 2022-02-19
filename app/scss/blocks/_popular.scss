@@ -94,6 +94,7 @@
  &__box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
   margin-bottom: 60px;
   gap: 25px;
  }
@@ -146,6 +147,74 @@
   &:active {
    text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
    text-decoration: none;
+  }
+ }
+}
+
+@media (max-width: 1200px) {
+ .popular {
+  &__box {
+   grid-template-columns: repeat(4, 1fr);
+   gap: 15px;
+  }
+ }
+}
+
+@media (max-width: 992px) {
+ .popular {
+  padding: 80px 0;
+  &__box {
+   grid-template-columns: repeat(3, 1fr);
+   margin-bottom: 40px;
+  }
+  &__card {
+   width: 150px;
+   padding: 20px 20px;
+  }
+  &__link {
+   font-size: 16px;
+  }
+ }
+}
+
+@media (max-width: 768px) {
+ .popular {
+  padding: 60px 0;
+  &__btn {
+   font-size: 12px;
+  }
+ }
+}
+
+@media (max-width: 576px) {
+ .popular { 
+  padding: 30px 0;
+  &__filter::before {
+   width: 30px;
+   height: 30px;
+   top: 27px;
+}
+  &__box {
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+   margin-bottom: 20px;
+  }
+  &__card {
+   width: 120px;
+  }
+  &__card-title {
+   width: 100%;
+   font-size: 11px;
+   margin-bottom: 12px;
+  }
+  &__card-price {
+   font-size: 11px; 
+  }
+  &__card-btn {
+   font-size: 9px;
+  }
+  &__link {
+   font-size: 12px;
   }
  }
 }

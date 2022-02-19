@@ -48,7 +48,48 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
    }   
+ }
+}
+
+@media (max-width: 992px) {
+ .restourant {
+  padding-bottom: 80px;
+  &__item-title {
+   font-size: 20px;
+  }
+  &__time {
+   font-size: 16px;
+  }
+  &__link {
+   width: 45px;
+   height: 25px;
+  }
+ }
+}
+
+@media (max-width: 768px) {
+ .restourant {
+  padding-bottom: 60px;
+  &__content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  }
+ }
+}
+
+@media (max-width: 576px) {
+ .restourant {
+  padding-bottom: 30px;
+  &__item-title {
+   font-size: 16px;
+  }
+  &__time {
+   font-size: 12px;
+  }
+  &__link {
+   width: 30px;
+   height: 15px;
+  }
  }
 }

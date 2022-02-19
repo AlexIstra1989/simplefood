@@ -24,9 +24,43 @@
       color: $dark;
     }
   }
-
   &__link--active {
     color: $orange; 
   }
-  
+  &__burger {
+   width: 30px;
+   height: 30px;
+   display: none;
+  }
+  &__burger-line {
+   display: block;
+   height: 1px;
+   width: 30px;
+   background-color: $orange;
+   position: relative;  
+   &::before,
+   &::after {
+    @include pseudo;
+    width: 30px;
+    height: 1px;
+    background-color: $orange;
+   }
+   &::before {
+    top: 10px;
+   } 
+   &::after {
+    top: 20px;
+   }
+ }
+}
+
+@media (max-width: 768px) {
+ .menu {
+  &__list {
+   display: none;
+  }
+  &__burger {
+   display: block;
+  }
+ }
 }
