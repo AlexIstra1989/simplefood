@@ -98,6 +98,14 @@
   margin-bottom: 60px;
   gap: 25px;
  }
+ &__menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 60px;
+  gap: 10px;
+  width: 870px;
+ }
  &__card {
   display: flex;
   flex-direction: column;
@@ -107,6 +115,9 @@
   border-radius: 5px;
   text-align: center;
   width: 210px;
+  &:hover {
+   border: 1px solid $orange;
+  }
  }
  &__card-image {
   margin-bottom: 10px;

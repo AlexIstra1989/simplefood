@@ -1,16 +1,18 @@
 .slider {
- &__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 990px;
-  margin: 0 auto;
- }
+ // &__item {
+ //  display: flex;
+ //  justify-content: center;
+ //  align-items: center;
+ //  max-width: 1100px;
+ //  // margin: 0 auto;
+ // }
  &__author-image {
   border-radius: 50%;
+  margin-right: 100px;
  }
  &__box {
   max-width: 570px;
+  padding-top: 30px;
  }
  &__blockquote {
   font-style: italic;
@@ -42,5 +44,26 @@
  &__span {
   @include text(14px, 1.3, $darkBlue-900);
   font-weight: 600;
+ }
+
+ .slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+ }
+
+ .slick-dots {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  li {
+   background-color: $orange;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   cursor: pointer;
+   &:not(:last-child) {
+    margin-right: 20px;
+   }
+  }
  }
 }

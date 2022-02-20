@@ -49,6 +49,48 @@ body {
 }    
 }
 
+.overflow {
+ overflow: hidden;
+}
+
+.irs--flat {
+ width: 240px;
+ height: 40px;
+}
+
+.irs-from,
+.irs-to {
+ display: none;
+}
+
+.breadcrumbs {
+ padding: 24px 0;
+ background-color: rgba(255, 122, 80, 0.1);
+ &__list {
+  display: flex;
+ }
+ &__item {
+  &:not(:last-child) {
+   margin-right: 28px;
+  }
+ }
+ &__link {
+  font-size: 14px;
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background (url("../../images/icons/pagination-arrow.svg"));
+   width: 5px;
+   height: 10px;
+   left: -15px;
+   top: 3px;
+  }
+  &--main::before {
+   display: none;
+  }
+ }
+}
+
 @media (max-width: 992px) {
  .title {
   font-size: 30px;
@@ -58,5 +100,8 @@ body {
 @media (max-width: 768px) {
  .title {
   font-size: 24px;
+ }
+ .logo {
+  z-index: 333;
  }
 }

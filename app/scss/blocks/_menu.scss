@@ -31,6 +31,7 @@
    width: 30px;
    height: 30px;
    display: none;
+   cursor: pointer;
   }
   &__burger-line {
    display: block;
@@ -57,10 +58,36 @@
 @media (max-width: 768px) {
  .menu {
   &__list {
-   display: none;
+   position: absolute;
+   background-color: #ececec;
+   display: block;
+   text-align: center;
+   padding-top: 140px;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 110vh;
+   transform: translateY(-330%);
+   transition: transform 0.5s ease;
+   z-index: 111;
+  }
+  &__item {
+   &:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+   }
+  }
+  &__link {
+   font-size: 28px;
+  }
+  .menu--active
+  &__list {
+   transform: translateY(0);
   }
   &__burger {
    display: block;
+   z-index: 222;
   }
  }
 }
