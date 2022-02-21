@@ -79,7 +79,7 @@ body {
   position: relative;
   &::before {
    @include pseudo;
-   @include background (url("../../images/icons/pagination-arrow.svg"));
+   @include background (url("../images/icons/breadcrumbs-left.svg"));
    width: 5px;
    height: 10px;
    left: -15px;
@@ -87,6 +87,54 @@ body {
   }
   &--main::before {
    display: none;
+  }
+ }
+}
+
+.pagination {
+ &__list {
+  display: flex;
+  justify-content: center;
+ }
+ &__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #FAEDED;
+  border: 1px solid $darkBlue-900;
+  border-radius: 3px;
+  &:nth-child(even) {
+   margin-right: 3px;
+  }
+  &:nth-child(odd) {
+   margin-left: 3px;
+   margin-right: 6px;
+  }
+ }
+ &__arrow-prev,
+ &__arrow-next {
+  position: relative;
+  &::before {
+   @include pseudo;
+   width: 10px;
+   height: 18px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+}
+ &__arrow-prev {
+  &::before {
+   @include pseudo;
+   @include background (url("../../images/icons/pagination-left.svg"));
+  }
+ }
+ &__arrow-next {
+  &::before {
+   @include pseudo;
+   @include background (url("../../images/icons/pagination-right.svg"));
   }
  }
 }
