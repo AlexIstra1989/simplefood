@@ -1,5 +1,5 @@
 .catalog {
- padding: 60px 120px;
+ padding: 60px 0 120px;
  &__box {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,8 @@
  &__label {
   display: block;
  }
+}
 
-
-
+@media (max-width: 1200px) {
+ 
 }

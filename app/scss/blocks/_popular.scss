@@ -169,6 +169,11 @@
    grid-template-columns: repeat(4, 1fr);
    gap: 15px;
   }
+  &__card-catalog {
+   &:nth-child(n+10) {
+    display: none;
+   }
+  }
  }
 }
 
@@ -195,6 +200,11 @@
   &__btn {
    font-size: 12px;
   }
+  &__card-title {
+   width: 100%;
+   font-size: 11px;
+   margin-bottom: 12px;
+  }
  }
 }
 
@@ -213,11 +223,6 @@
   }
   &__card {
    width: 120px;
-  }
-  &__card-title {
-   width: 100%;
-   font-size: 11px;
-   margin-bottom: 12px;
   }
   &__card-price {
    font-size: 11px; 
