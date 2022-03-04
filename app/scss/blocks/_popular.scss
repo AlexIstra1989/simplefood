@@ -169,11 +169,6 @@
    grid-template-columns: repeat(4, 1fr);
    gap: 15px;
   }
-  &__card-catalog {
-   &:nth-child(n+10) {
-    display: none;
-   }
-  }
  }
 }
 

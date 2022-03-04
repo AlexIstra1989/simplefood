@@ -4,6 +4,16 @@ $(document).ready(function(){
   $('.menu__burger').toggleClass('menu__burger--active');
  });
 
+ $('.catalog__filters-btn').on('click', function() {
+  $('.catalog__aside').toggleClass('catalog__aside--active'),
+  $('.catalog__filters-btn').toggleClass('catalog__filters-btn--active');
+ });
+
+ $('.catalog__filters-btn').on('click', function() {
+  $('.catalog__menu').toggleClass('catalog__menu--active');
+ });
+
+
  $('.menu__burger').click(function (event) {
   event.preventDefault();
   $('body').toggleClass('overflow');
@@ -16,6 +26,26 @@ $(document).ready(function(){
   slidesToShow: 1,
   slidesToScroll: 1
  });
+
+ $('.promotions__inner').slick({
+  responsive: [
+   {
+    breakpoints: 2048,
+    settings: 'unslick'
+   },
+   // {
+   //   breakpoints: 576,
+   //   settings: {
+   //    dots: true,
+   //    arrows: false,
+   //    infinite: true,
+   //    slidesToShow: 1,
+   //    slidesToScroll: 1,
+   //   }
+   //  }
+   ],
+ });
+
 
  $('.catalog__price-scale').ionRangeSlider({
   type: "double",
