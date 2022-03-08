@@ -27,6 +27,16 @@ $(document).ready(function(){
   slidesToScroll: 1
  });
 
+ $('.product__slider').slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: '<img src="../images/icons/next-arrow.svg" alt="">',
+  prevArrow: '<img src="../images/icons/prev-arrow.svg" alt="">'
+ });
+
  $('.promotions__inner').slick({
   responsive: [
    {
@@ -44,6 +54,14 @@ $(document).ready(function(){
    //   }
    //  }
    ],
+ });
+
+ $('.product-tabs__link').on('click', function (e) {
+  e.preventDefault();
+  $('.product-tabs__link').removeClass('product-tabs__link--active');
+  $(this).addClass('product-tabs__link--active');
+  $('.product-tabs__item').removeClass('product-tabs__item--active');
+  $($(this).attr('href')).addClass('product-tabs__item--active');
  });
 
 

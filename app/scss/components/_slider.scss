@@ -67,3 +67,20 @@
   }
  }
 }
+
+.product__slider {
+ .slick-list {
+  max-width: 610px;
+  height: 550px;
+  box-shadow: 0px 0px 0px 1px #ececec;
+  border-radius: 5px;
+ }
+ .slick-slide img {
+  margin: 0 auto;
+  padding-top: 70px;
+ }
+ .slick-arrow {
+   width: 40px;
+   height: 40px;
+ }
+}
