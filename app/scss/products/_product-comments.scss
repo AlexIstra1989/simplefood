@@ -1,0 +1,88 @@
+.product-comments {
+ &__title {
+  margin-bottom: 30px;
+ }
+ &__block {
+  &:not(:last-child) {
+   padding-bottom: 20px;
+   margin-bottom: 30px;
+   border-bottom: 1px solid #E4E4E4;
+  }
+ }
+ &__inner {
+  display: flex;
+  margin-bottom: 20px;
+ }
+ &__avatar {
+  margin-right: 25px;
+ }
+ &__star {
+  margin-left: auto;
+ }
+ &__form-title {
+  margin-bottom: 30px;
+ }
+ &__form-score {
+  margin-right: 15px;
+ }
+ &__form-star {
+  display: inline-block;
+ }
+ &__form-inner {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__form-box {
+ 
+ }
+ &__form-review {
+  display: block;
+  margin-bottom: 13px;
+ }
+ &__form-textarea {
+  resize: none;
+  width: 400px;
+  padding: 16px 0 128px 18px;
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+   &::placeholder {
+    color: #C1C1C1;
+   }
+ }
+ &__form-fields {
+  display: flex;
+  flex-direction: column;
+ }
+ &__form-field {
+  width: 260px;
+  padding: 18px 0 18px 18px;
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+  &:not(:last-child) {
+   margin-bottom: 10px;
+  }
+  &::placeholder {
+   color: #C1C1C1;
+  }
+ }
+ &__form-name,
+ &__form-mail {
+  margin-bottom: 13px;
+ }
+ &__form-text {
+  display: inline;
+ }
+ &__form-btn {
+  display: block;
+  margin-top: 30px;
+  background-color: $orange;
+  color: #fff;
+  padding: 10px 30px;
+  transition: all 0.5s;
+  &:hover {
+   background-color: #fff;
+   color: $orange;
+   border: 1px solid $orange;
+  }
+ }
+}

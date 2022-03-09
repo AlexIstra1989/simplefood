@@ -18,19 +18,27 @@
      right: 0;
      width: 100%;
      height: 1px;
-     background-color: $secondaryColor;
+     background-color: $orange;
     }
   }
  }
  &__content {
-  max-width: 590px;
+  max-width: 690px;
+  margin: 0 auto;
+  text-align: left;
  }
-
-
  &__item {
   display: none;
    &.product-tabs__item--active {
     display: block;
   }
+ }
+ &__text {
+  &:not(:last-child) {
+   margin-bottom: 20px;
+  }
+ }
+ &__descr {
+  font-weight: 600;
  }
 }
