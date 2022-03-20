@@ -46,9 +46,14 @@
   font-weight: 600;
  }
 
- .slick-initialized .slick-slide {
+ .slick-slide {
   display: flex;
   justify-content: center;
+  width: 100%;
+ }
+
+ .slick-list {
+  margin-bottom: 20px;
  }
 
  .slick-dots {
@@ -84,3 +89,32 @@
    height: 40px;
  }
 }
+
+@media (max-width: 992px) {
+ .slider {
+  &__box {
+   max-width: 400px;
+   width: 100%;
+  }
+  &__author-image {
+   width: 200px;
+   height: 200px;
+  }
+ }
+ .slick-slide {
+  align-items: center;
+ }
+}
+
+@media (max-width: 768px) {
+ .slider {
+  &__author-image {
+   margin: 0;
+  }
+  .slick-slide {
+   flex-direction: column;
+  }
+ }
+}
+
+

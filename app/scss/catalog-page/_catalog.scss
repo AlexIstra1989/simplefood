@@ -9,6 +9,11 @@
  &__filters-btn {
   display: none;
  }
+ &__selects {
+  option {
+   font-size: 12px;
+  }
+ }
  &__selects-name {
   margin-right: 15px;
  }
@@ -127,6 +132,9 @@
 }
 @media (max-width: 768px) {
  .catalog {
+  &__filters-btn {
+   display: inline-block;
+  }
   &__aside {
    width: 100px;
   }
@@ -154,34 +162,37 @@
 
 @media (max-width: 375px) {
  .catalog {
-  &__box {
-   display: block;
-   margin-bottom: 20px;
-  }
   &__title {
-   margin-bottom: 20px;
+   font-size: 5px;
   }
-  &__filters-btn {
-   display: inline-block;
-  }
-  &__selects {
-   display: inline-block;
-   vertical-align: top;
-  }
-  &__selects-name,
-  &__selects-show {
-   height: 47px;
-   font-size: 14px;
-  }
-  &__aside {
-   display: none;
-  }
-  .catalog__aside--active {
-  display: block;
-   width: 100%;
-  }
-  .catalog__menu--active {
-   display: none;
-  }
+  // &__box {
+  //  display: block;
+  //  margin-bottom: 20px;
+  // }
+  // &__title {
+  //  margin-bottom: 20px;
+  // }
+  // &__filters-btn {
+  //  display: inline-block;
+  // }
+  // &__selects {
+  //  display: inline-block;
+  //  vertical-align: top;
+  // }
+  // &__selects-name,
+  // &__selects-show {
+  //  height: 47px;
+  //  font-size: 14px;
+  // }
+  // &__aside {
+  //  display: none;
+  // }
+  // .catalog__aside--active {
+  // display: block;
+  //  width: 100%;
+  // }
+  // .catalog__menu--active {
+  //  display: none;
+  // }
  }
 }
